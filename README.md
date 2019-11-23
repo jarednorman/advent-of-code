@@ -8,7 +8,7 @@ If you'd like to use this as a template for your own solutions, simply fork it a
 
 ## Usage
 
-```
+```bash
 # Install dependencies (really just pry):
 $ bundle install
 
