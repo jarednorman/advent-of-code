@@ -1,4 +1,4 @@
-![The people of Who-ville dancing around their huge tree](https://media.giphy.com/media/Tymnez8cCL9Nm/giphy.gif)
+![The Grinch smiling devilishly](https://media.giphy.com/media/13lIFCT4YxJSes/giphy.gif)
 
 # Jared's Advent of Code Solutions
 
