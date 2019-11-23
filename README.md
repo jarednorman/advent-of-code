@@ -4,7 +4,7 @@
 
 Hey, I'm Jared and I sometimes participate in [Advent of Code](https://adventofcode.com/), a fun annual competition (but there's no requirement that you approach it competitively) where programmers are given a two-part problem solve every day from December 1st to 25th. This project contains my solutions, as well as a handy script to set up each problem.
 
-If you'd like to use this as a template for your own solutions, simply fork it and remove the solutions: `git rm -rf ./201*`
+If you'd like to use this as a template for your own solutions, simply fork it and remove the solutions: `git rm -rf ./201* && git commit -m "Remove solutions`
 
 ## Usage
 
