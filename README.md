@@ -1,4 +1,4 @@
-![The Grinch smiling devilishly](https://media.giphy.com/media/13lIFCT4YxJSes/giphy.gif)
+<img src="https://media.giphy.com/media/13lIFCT4YxJSes/giphy.gif" style="width:100%;">
 
 # Jared's Advent of Code Solutions
 
