@@ -2,4 +2,14 @@
 
 require_relative '../env.rb'
 
-binding.pry
+module Advent
+  year, puzzle = *ARGV
+
+  raise "The year looks off: #{year.inspect}" if year.to_i < 2015
+  raise "The puzzle looks off: #{puzzle.inspect}" unless (1..25).include? puzzle.to_i
+
+  puzzle = [0, puzzle].join if puzzle.to_i < 10
+
+  puzzle_PATH = "#{ROOT}/#{year}/#{puzzle}.rb"
+  puts puzzle_PATH
+end
