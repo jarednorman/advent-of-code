@@ -1,4 +1,4 @@
-<img src="https://media.giphy.com/media/13lIFCT4YxJSes/giphy.gif" style="width:100%;">
+<img src="https://media.giphy.com/media/13lIFCT4YxJSes/giphy.gif" width="100%" />
 
 # Jared's Advent of Code Solutions
 
