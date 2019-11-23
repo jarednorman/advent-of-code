@@ -6,6 +6,8 @@ Hey, I'm Jared and I sometimes participate in [Advent of Code](https://adventofc
 
 If you'd like to use this as a template for your own solutions, simply fork it and remove the solutions: `git rm -rf ./201* && git commit -m "Remove solutions`
 
+I've included couple of 2018 solutions in here as a reference, but my actual solutions from prior to 2019 can be found here: [2018](https://github.com/jarednorman/advent-of-code-2018/) [2017](https://github.com/jarednorman/advent2017)
+
 ## Usage
 
 ```bash
