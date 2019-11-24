@@ -18,7 +18,20 @@ class PartOne
 end
 
 class PartTwo < PartOne
+  DIRECTION = {
+    "(" => 1,
+    ")" => -1,
+  }.freeze
+
   def solve
-    0
+    current_floor = 0
+
+    input.chomp.split("").each_with_index do |instruction, index|
+      current_floor += DIRECTION[instruction]
+
+      if current_floor == -1
+        return index + 1
+      end
+    end
   end
 end
