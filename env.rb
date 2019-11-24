@@ -27,7 +27,7 @@ module Advent
               @input ||=
                 begin
                   path = File.expand_path(File.dirname(__FILE__))
-                  File.read(Pathname.new(path).join("input.txt"))
+                  File.read(Pathname.new(path).join("input.txt")).chomp
                 end
             end
           end
