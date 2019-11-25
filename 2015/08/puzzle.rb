@@ -21,6 +21,8 @@ end
 
 class PartTwo < PartOne
   def solve
-    0
+    input.sum do |str|
+      str.to_json.length - str.length
+    end
   end
 end
