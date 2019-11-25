@@ -25,6 +25,8 @@ end
 
 class PartTwo < PartOne
   def solve
-    0
+    input.count do |string|
+      string.match?(/(\w\w).*\1/) && string.match?(/(\w).\1/)
+    end
   end
 end
