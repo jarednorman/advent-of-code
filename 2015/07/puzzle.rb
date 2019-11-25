@@ -4,6 +4,14 @@ class PartOne
 
   def solve
     calculate("a")
+    # binding.pry unless calculate("d") == 72
+    # binding.pry unless calculate("e") == 507
+    # binding.pry unless calculate("f") == 492
+    # binding.pry unless calculate("g") == 114
+    # binding.pry unless calculate("h") == 65412
+    # binding.pry unless calculate("i") == 65079
+    # binding.pry unless calculate("x") == 123
+    # binding.pry unless calculate("y") == 456
   end
 
   private
@@ -23,12 +31,12 @@ class PartOne
       elsif m = /(\w+) LSHIFT (\w+)/.match(x)
         value(m[1]) << value(m[2])
       elsif m = /NOT (\w+)/.match(x)
-        ~value(m[1])
+        [~value(m[1])].pack('S').unpack('S').first
       elsif m = /(\w+)/.match(x)
         value(m[1])
       else
         binding.pry
-      end.clamp(0, 65535)
+      end
   end
 
   def value(z)
