@@ -66,7 +66,9 @@ class PartOne
 end
 
 class PartTwo < PartOne
-  def solve
-    0
+  def wires
+    super.tap do |h|
+      h["b"] = 956
+    end
   end
 end
