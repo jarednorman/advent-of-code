@@ -23,6 +23,8 @@ end
 
 class PartTwo < PartOne
   def solve
-    0
+    x = input
+    50.times { x = iterate(x) }
+    x.length
   end
 end
