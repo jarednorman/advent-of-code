@@ -1,10 +1,17 @@
 class PartOne
   def initialize
-    input[1] = 12
-    input[2] = 2
   end
 
   def solve
+    run(12, 2)
+  end
+
+  private
+
+  def run(noun, verb)
+    reset_program!
+    input[1] = noun
+    input[2] = verb
     @position = 0
 
     loop do
@@ -22,8 +29,6 @@ class PartOne
       @position += 4
     end
   end
-
-  private
 
   def op1
     input[@position + 1]
@@ -48,10 +53,20 @@ class PartOne
         File.read(Pathname.new(path).join("input.txt")).chomp.split(',').map(&:chomp).map(&:to_i)
       end
   end
+
+  def reset_program!
+    @input = nil
+  end
 end
 
 class PartTwo < PartOne
   def solve
-    0
+    (0..99).each do |noun|
+      (0..99).each do |verb|
+        if run(noun, verb) == 19690720
+          return 100 * noun + verb
+        end
+      end
+    end
   end
 end
